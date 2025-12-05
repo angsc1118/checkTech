@@ -64,7 +64,7 @@ def main():
     date_diff = (end_input - start_input).days
     
     if run_btn:
-        if date_diff > 10:
+        if date_diff > 50:
             st.error(f"⚠️ 日期區間過長 ({date_diff} 天)。為了顯示效能，請限制在 10 天以內。")
         elif date_diff < 0:
             st.error("⚠️ 結束日期不能早於起始日期。")
